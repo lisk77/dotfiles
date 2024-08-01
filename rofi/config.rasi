@@ -1,0 +1,126 @@
+configuration {
+    modi:                       "drun";
+    font:                       "JetBrains Mono Nerd Font 12";
+    show-icons:                 true;
+    display-drun: "";
+    icon-theme:                 "kora";
+    hover-select:               true;
+    me-select-entry:            "";
+    me-accept-entry:            "MousePrimary";
+    window-format:              "{w} · {c} · {t}";
+    
+}
+
+window {
+    width:                        777px; 
+    color:                        #FFFFFF;
+    border:                       2px;
+    border-color:                 #61afef;
+    location:                     center;
+    anchor:                       center;
+    fullscreen:                   false;
+    enabled:                      true;
+    border-radius:                10px;
+    background-color:             transparent;
+}
+
+mainbox {
+    enabled:                      true;
+    orientation:                  vertical;
+    spacing:                      0px;
+    margin:                       0px;
+    background-color:             rgba(40,44,52,0.5);
+}
+
+listbox {
+    spacing:                     20px;
+    background-color:            transparent;
+    orientation:                 vertical;
+}
+
+inputbar {
+    enabled:                      true;
+    text-color:                   #abb2bf;
+    spacing:                      10px;
+    padding:                      15px;
+    border-radius:                10px;
+    border-color:                 #61afef;
+    background-color:             #282c34;
+}
+
+textbox-prompt-colon {
+    enabled:                      false;
+    expand:                       false;
+    str:                          "";
+    background-color:             transparent;
+    text-color:                   inherit;
+}
+
+entry {
+    enabled:                      true;
+    background-color:             transparent;
+    text-color:                   inherit;
+    cursor:                       text;
+    placeholder:                  "Search...";
+    placeholder-color:            inherit;
+}
+
+button {
+    padding:                      10px;
+    border-radius:                7px;
+    background-color:             #23272e;
+    text-color:                   inherit;
+    cursor:                       pointer;
+    border:                       0px;
+}
+
+button selected {
+    background-color:             #61afef;
+    text-color:                   #282c34;
+}
+
+listview {
+    enabled:                      true;
+    columns:                      2;
+    lines:                        8;
+    cycle:                        true;
+    dynamic:                      true;
+    scrollbar:                    false;
+    layout:                       vertical;
+    reverse:                      false;
+    fixed-height:                 true;
+    fixed-columns:                true;
+    spacing:                      0px;
+    padding:                      10px;
+    margin:                       0px;
+    background-color:             #282c34;
+    border:0px;
+}
+
+element {
+    enabled:                      true;
+    padding:                      10px;
+    margin:                       5px;
+    cursor:                       pointer;
+    background-color:             #23272e;
+    border-radius:                10px;
+    border:                       1px;
+    border-color:                 #61afef;
+}
+
+element normal.normal {
+    background-color:            inherit;
+    text-color:                  #abb2bf;
+}
+
+
+element selected.normal {
+    background-color:            #61afef;
+    text-color:                  #282c34;
+    border-color:                #abb2bf;
+}
+
+element alternate.normal {
+    background-color:            #1e2227;
+    text-color:                  #abb2bf;
+}

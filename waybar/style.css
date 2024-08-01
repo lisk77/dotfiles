@@ -1,0 +1,113 @@
+@keyframes blink {  
+  50% { opacity: 0; }
+}
+
+window#waybar {
+  background: rgba(0,0,0,0)
+}
+
+* {
+  color: #abb2bf;
+  border: none;
+  /*padding-left: 10px;
+  padding-right: 10px;*/
+  font-family: "JetBrains Mono Nerd Font";
+  font-size: 18px;
+}
+
+.modules-left > widget:first-child > #window {
+  margin-left: 0;
+}
+
+.modules-right > widget:last-child > #window {
+  margin-right: 0;
+}
+
+#taskbar {
+  margin-left: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border: 0px solid #61afef;
+  border-radius: 30px;
+}
+
+#taskbar button {
+  padding: 5px;
+  border-radius: 30px;
+}
+
+#taskbar.empty {
+  border-color: rgba(0,0,0,0);
+}
+
+#pulseaudio {
+  margin: 0px 10px 0px 10px;
+}
+
+#network {
+  margin: 0px 10px 0px 10px;
+}
+
+#network.disconnected {
+  color: #e06c75;
+}
+
+#battery {
+  margin: 0px 10px 0px 10px;
+}
+
+#battery.full {
+  color: #98c379;
+}
+
+#battery.normal {
+  color: #abb2bf;
+}
+
+#battery.warning {
+  color: #e5c07b;
+  background: transparent;
+}
+
+#battery.critical {
+  color: #e29678;
+}
+
+#battery.bad {
+  color: #e06c75;
+}
+
+#battery.shit:not(.charging) {
+  color: #e06c75;
+  animation-name: blink;
+  animation-duration: 1.36s; /*Half of Eulers number*/
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+#clock {
+  padding-left: 0px;
+  padding-right: 20px;
+}
+
+#custom-power-menu {
+  margin: 0px 10px 0px 10px;
+  padding-right: 10px;
+}
+
+#window {
+  font-weight: bold;
+  border: 0.5px solid #abb2bf;
+  border-radius: 30px;
+  padding: 0px 15px 0px 15px;
+}
+
+window#waybar.empty #window{
+  border-color: rgba(0,0,0,0);
+}
+
+/*#custom-launcher {
+  margin: 0px 10px 0px 10px;
+  padding-left: 15px;
+  background-image: image(url("./image.png"));
+}*/

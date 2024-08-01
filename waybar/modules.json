@@ -1,0 +1,73 @@
+{
+  "clock#calendar": {
+    "format": "{:%a. %d.%m.%Y}",
+    "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+    "format-alt": "{:%Y-%m-%d}"
+  },
+
+  "clock": {
+    "format": "{:%T}",
+    "interval": 1
+  },
+
+  "battery": {
+    "states": {
+      "full": 100,
+      "normal": 99,
+      "warning": 30,
+      "critical": 20,
+      "bad": 10,
+      "shit": 5
+    },
+    "format": "{icon}",
+    "format-charging": " {icon}",
+    "format-icons": [" ", " ", " ", " ", " ", " ", " ", " ", " ", " "],
+    "tooltip-format": "{capacity}%\n{time}",
+    "interval": 1
+  },
+
+  "custom/power-menu": {
+    "format": "",
+    "on-click": "wlogout",
+    "tooltip": false
+  },
+
+  "custom/launcher": {
+    "format": " ",
+    "on-click": "wofi --show dmenu",
+    "tooltip": false
+  },
+
+  "network": {
+    "format-wifi": " ",
+    "format-disconnected": "󰖪",
+    "on-click": "nm-connection-editor",
+    "tooltip-format": "<b>{essid}</b> | <i>{ipaddr}</i>\n{bandwidthDownBytes}  / {bandwidthUpBytes} ",
+    "interval": 1
+  },
+
+  "pulseaudio": {
+    "format": "{icon}",
+    "tooltip-format": "{desc}\n{volume}%",
+    "format-icons": ["󰸈", "󰕿", "󰕿", "󰕿", "󰖀", "󰖀", "󰖀", "󰕾", "󰕾", "󰕾", "󰕾"],
+    "on-click": "pavucontrol"
+  },
+
+  "wlr/taskbar": {
+
+    "format": "{icon}",
+    "icon-size": 18,
+    "tooltip-format": "{title}",
+    "on-click": "activate",
+    "on-click-middle": "close",
+    "sort-by-app-id": true,
+    "ignore-list": [
+      "Alacritty"
+    ]
+  },
+
+  "hyprland/window": {
+    "max-length": 77,
+    "seperate-outputs": true
+  }
+}

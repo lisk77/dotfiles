@@ -1,0 +1,32 @@
+[helpers]
+
+[default]
+depends = ["fish", "wezterm", "hypr", "waybar", "waypaper", "nvim", "sddm", "rofi"]
+
+[default.files]
+
+[default.variables]
+
+[fish.files]
+"fish/"= "~/.config/fish/"
+
+[wezterm.files]
+"wezterm/" = "~/.config/wezterm/"
+
+[hypr.files]
+"hypr/" = "~/.config/hypr/"
+
+[waybar.files]
+"waybar/" = "~/.config/waybar/"
+
+[waypaper.files]
+"waypaper/config.ini" = "~/.config/waypaper/config.ini"
+
+[nvim.files]
+"nvim/" = "~/.config/nvim/"
+
+[sddm.files]
+"sddm/sddm.conf" = "~/.config/sddm/sddm.conf"
+
+[rofi.files]
+"rofi/config.rasi" = "~/.config/rofi/config.rasi"

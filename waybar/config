@@ -1,0 +1,29 @@
+{
+  "layer": "top",
+  "margin-top": 10,
+  "margin-bottom": 10,
+  "margin-left": 0,
+  "margin-right": 0,
+  "spacing": 0,
+  "position": "top",
+  "height": 36,
+
+  "include": ["~/.config/waybar/modules.json"],
+
+  "modules-right": [
+    "pulseaudio",
+    "network",
+    "battery",
+    "clock#calendar",
+    "clock",
+    "custom/power-menu"
+  ],
+
+  "modules-center": [
+    "hyprland/window"
+  ],
+
+  "modules-left": [
+    "wlr/taksbar"
+  ]
+}
