@@ -12538,6 +12538,7 @@
 "nvim/lua/plugins/init.lua" = "/home/lisk77/.config/nvim/lua/plugins/init.lua"
 "rofi/config.rasi" = "/home/lisk77/.config/rofi/config.rasi"
 "sddm/sddm.conf" = "/home/lisk77/.config/sddm/sddm.conf"
+"starship/starship.toml" = "/home/lisk77/.config/starship.toml"
 "waybar/config" = "/home/lisk77/.config/waybar/config"
 "waybar/modules.json" = "/home/lisk77/.config/waybar/modules.json"
 "waybar/style.css" = "/home/lisk77/.config/waybar/style.css"

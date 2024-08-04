@@ -1,7 +1,7 @@
 [helpers]
 
 [default]
-depends = ["fish", "wezterm", "hypr", "waybar", "waypaper", "nvim", "sddm", "rofi"]
+depends = ["fish", "wezterm", "hypr", "waybar", "waypaper", "nvim", "sddm", "rofi", "starship"]
 
 [default.files]
 
@@ -30,3 +30,6 @@ depends = ["fish", "wezterm", "hypr", "waybar", "waypaper", "nvim", "sddm", "rof
 
 [rofi.files]
 "rofi/config.rasi" = "~/.config/rofi/config.rasi"
+
+[starship.files]
+"starship/starship.toml" = "~/.config/starship.toml"
