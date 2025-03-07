@@ -1,4 +1,4 @@
-!/bin/bash
+#!/bin/bash
 
-python3 /home/lisk77.config/hypr/scripts/gaussian.py
+grim - | magick - -blur "50x15" /home/lisk77/tmp/output_blurred.png
 hyprlock

@@ -1,8 +1,7 @@
 {
   "clock#calendar": {
     "format": "{:%a. %d.%m.%Y}",
-    "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-    "format-alt": "{:%Y-%m-%d}"
+    "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
   },
 
   "clock": {
@@ -23,6 +22,7 @@
     "format-charging": " {icon}",
     "format-icons": [" ", " ", " ", " ", " ", " ", " ", " ", " ", " "],
     "tooltip-format": "{capacity}%\n{time}",
+    "format-alt": "{capacity}%",
     "interval": 1
   },
 
@@ -69,5 +69,30 @@
   "hyprland/window": {
     "max-length": 77,
     "seperate-outputs": true
+  },
+
+  "custom/playpause": {
+    "exec": "playerctl status",
+    "format": "",
+    "format-alt": "󰐊",
+    "exec_if": "playerctl status | grep -q 'Playing'",
+    "on-click": "playerctl play-pause"
+  },
+
+  "custom/forward": {
+    "format": "",
+    "on-click": "playerctl next"
+  },
+
+  "custom/backward": {
+    "format": "",
+    "on-click": "playerctl previous"
+  },
+
+  "custom/spotify": {
+    "format": "{}",
+    "max-length": 77,
+    "exec": "playerctl metadata --format '{{ artist }} - {{ title }}'",
+    "interval": 3
   }
 }

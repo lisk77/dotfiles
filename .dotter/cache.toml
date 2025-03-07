@@ -12484,6 +12484,7 @@
 "fish/functions/wezterm/window/src/os/xkeysyms.rs" = "/home/lisk77/.config/fish/functions/wezterm/window/src/os/xkeysyms.rs"
 "fish/functions/wezterm/window/src/screen.rs" = "/home/lisk77/.config/fish/functions/wezterm/window/src/screen.rs"
 "fish/functions/wezterm/window/src/spawn.rs" = "/home/lisk77/.config/fish/functions/wezterm/window/src/spawn.rs"
+"hypr/configs/animations.conf" = "/home/lisk77/.config/hypr/configs/animations.conf"
 "hypr/configs/input.conf" = "/home/lisk77/.config/hypr/configs/input.conf"
 "hypr/configs/misc.conf" = "/home/lisk77/.config/hypr/configs/misc.conf"
 "hypr/configs/monitors.conf" = "/home/lisk77/.config/hypr/configs/monitors.conf"
