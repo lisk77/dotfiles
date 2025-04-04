@@ -1,5 +1,5 @@
 # .files
 
-This is a arch linux hyprland installation. That i worked on a bit... maybe spent too much time for what this came to be.
+Just my dotfiles for all the curious cats. 
 
-The nvim installation is just nvchad.
+i use Arch btw.

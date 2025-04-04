@@ -1,0 +1,116 @@
+@theme "/dev/null"
+
+* {
+  background-color: rgba(24,33,47,0.47);
+}
+
+
+configuration {
+        show-icons: true;
+        icon-theme: "kora";
+        location: 0;
+        font: "JetBrains Mono Nerd Font 12";
+        display-dmenu: "";
+        me-select-entry: "";
+}
+
+window {
+    width: 777px;
+    transparency: "real";
+    orientation: vertical;
+    location: center;
+    anchor: center;
+    enabled: true;
+    background-color: transparent;
+    border-color: #61afef;
+    border: 2px;
+    border-radius: 10px;
+}
+
+mainbox {
+        children: [inputbar, listview];
+        orientation: vertical;
+        spacing: 0px;
+        margin: 0px;
+        background-color: rgba(40,44,52,0.5);
+}
+
+// ELEMENT
+// -----------------------------------
+
+element {
+    enabled: true;
+    padding: 10px;
+    margin: 5px;
+    cursor: pointer;
+    background-color: #282c32;
+    border-radius: 10px;
+    color: #abb2bf;
+}
+
+element selected {
+    background-color: #61afef;
+    text-color: #282c34;
+    border-color: #abb2bf;
+}
+
+element-text {
+        background-color: inherit;
+        text-color: inherit;
+}
+
+element-icon {
+        size: 16 px;
+        background-color: #00000000;
+        padding: 0 6 0 0;
+        alignment: vertical;
+}
+
+listview {
+    enabled: true;
+    columns: 1;
+    lines: 8;
+    cycle: false;
+    dynamic: true;
+    scrollbar: true;
+    layout: vertical;
+    reverse: false;
+    fixed-height: true;
+    fixed-columns: true;
+    spacing: 0px;
+    padding: 10px;
+    margin: 0px;
+    background-color: #282c34;
+    border: 0px;
+}
+
+// INPUT BAR
+//------------------------------------------------
+
+entry {
+
+    enabled:                      true;
+    background-color:             transparent;
+    text-color:                   inherit;
+    cursor:                       text;
+    placeholder:                  "Search...";
+    placeholder-color:            inherit;
+}
+
+inputbar {
+    enabled: true;
+    text-color: #abb2bf;
+    spacing: 15px;
+    padding: 15px;
+    border-radius: 10px;
+    border-color: #61afef;
+    background-color: #282c34;
+}
+
+prompt {
+        text-color: #FFFFFFFF;
+  font: 'JetBrains Mono Nerd Font';
+        padding: 0 0 0 0;
+        margin: 0 0 0 0;
+  background-color: rgba(24,33,47,0);
+}

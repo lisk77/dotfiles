@@ -7,12 +7,12 @@ configuration {
     hover-select:               true;
     me-select-entry:            "";
     me-accept-entry:            "MousePrimary";
-    window-format:              "{w} · {c} · {t}";
+    window-format:              "{w} · {c}";
     
 }
 
 window {
-    width:                        777px; 
+    width:                        777px;
     color:                        #FFFFFF;
     border:                       2px;
     border-color:                 #61afef;
@@ -83,7 +83,7 @@ listview {
     enabled:                      true;
     columns:                      2;
     lines:                        8;
-    cycle:                        true;
+    cycle:                        false;
     dynamic:                      true;
     scrollbar:                    false;
     layout:                       vertical;
@@ -104,7 +104,7 @@ element {
     cursor:                       pointer;
     background-color:             #23272e;
     border-radius:                10px;
-    border:                       1px;
+    border:                       0px;
     border-color:                 #61afef;
 }
 
@@ -121,6 +121,6 @@ element selected.normal {
 }
 
 element alternate.normal {
-    background-color:            #1e2227;
+    background-color:            #282c34;//#1e2227;
     text-color:                  #abb2bf;
 }
